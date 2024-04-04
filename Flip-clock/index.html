@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip-Clock</title>
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- css link-->
+    <link rel="stylesheet" href="./source/css/flipTimer.css" />
+    <!-- javascript link -->
+    <script src="./source//js/jquery.flipTimer.js"></script>
+    <style>
+      body {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Countdown Your Birth Date (Days Left):</h1>
+    <div class="flipTimer">
+      <div class="days"></div>
+      <div class="hours"></div>
+      <div class="minutes"></div>
+      <div class="seconds"></div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".flipTimer").flipTimer({
+          // count up or countdown
+          direction: "down",
+
+          // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+          date: "November 01, 2024 22:45:00",
+
+          // callback works only with direction = "down"
+          callback: function () {
+            alert("times up!");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
