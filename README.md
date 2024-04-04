@@ -1,6 +1,6 @@
 # DIGITAL CLOCK
 
-`Visit the Website by following link:` [Digital Clock(https://digital-clock-jay.netlify.app/)
+`Visit the Website by following link:` [Digital Clock](https://digital-clock-jay.netlify.app/)
 
 # ANALOG CLOCK
 
